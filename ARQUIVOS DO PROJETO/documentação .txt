@@ -1,0 +1,35 @@
+passando parametro de registro
+
+
+endpoin -> http://127.0.0.1:8000/api/register
+name: "nome"
+email: "email@email"
+password: "teste123"
+password_confirmation: "teste123"
+
+{
+	"user": {
+		"id": 2,
+		"name": "\"edilberto\"",
+		"email": "\"teste@teste.com\""
+	},
+	"token": "2|XwxgjG6NjPLG8Qf2o6u1GK9NN0VbR80G5ykKfi5v"
+}
+isso gera o token: 2|XwxgjG6NjPLG8Qf2o6u1GK9NN0VbR80G5ykKfi5v
+colocar em auth / (bearer token) -> coloca o token gerado e a consulta no endpoint -> GET/ http://127.0.0.1:8000/api/versiculo/1
+
+cadastrar versiculo:
+capitulo: "1"
+versiculo: "1"
+texto: "o senhor é meu pastor e nada me faltara"
+livro_id: "1"
+
+cadastrar testamento:
+nome:"novo ou antigo testamento"
+
+cadastrar livro:
+posicao: "0"
+nome: "deuteronomio"
+abreviacao: "dtrm"
+testamento_id: "1" //novo testamento
+
